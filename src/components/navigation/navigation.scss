@@ -1,0 +1,191 @@
+a:hover {
+    color: #000;
+  }
+  
+  .navbar {
+    flex-direction: row;
+    width: -webkit-fill-available;
+    z-index: 1000;
+  }
+  
+  .navbar {
+    padding: 0 !important;
+    margin: 0 !important;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+  .navbar-brand {
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+  }
+  
+  @media (min-width: 992px) {
+    .navbar-brand {
+      padding-left: 4%;
+    }
+  
+    nav.nav-sticky {
+      position: fixed;
+      display: flex;
+      left: 0;
+      justify-content: space-between;
+    }
+  
+    .navbar-expand-lg:not(.navbar-transparent) {
+      background-color: #fff;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    }
+  
+    .navbar.navbar-transparent a.navbar-brand h1, .navbar.navbar-transparent a.nav-link {
+      color: black;
+    }
+  
+    .navbar-expand-lg .navbar-collapse {
+      flex-direction: column;
+    }
+  
+    .navbar-collapse .nav {
+      justify-content: space-around;
+    }
+  
+    .flex-nav {
+      -webkit-box-orient: horizontal!important;
+      -webkit-box-direction: normal!important;
+      -ms-flex-direction: row!important;
+      flex-direction: row!important;
+      padding-right: 60px;
+      align-items: center;
+    }
+  }
+  
+  @media only screen and (max-width: 360px) , screen and (max-width: 800px) {  
+    .navbar .navbar-brand, .navbar .nav-link {
+      color: #1fbec6;
+    }
+  
+    .flex-nav {
+      -webkit-box-orient: horizontal!important;
+      -webkit-box-direction: normal!important;
+      -ms-flex-direction: column!important;
+      flex-direction: column!important;
+      padding-right: 60px;
+      align-items: center;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 768px) {
+    .navbar-brand {
+      padding-left: 34%;
+    }
+  }
+  
+  
+  @media only screen and (max-width: 240px) {
+    .navbar-brand {
+      font-size: 15px;
+      padding-left: 10px;
+    }
+  
+    .navbar-toggler {
+      font-size: 10px;
+    }
+  
+    .nav.flex-nav {
+      font-size: 12px;
+    }
+  }
+  
+  @media only screen and (min-width: 800px) and (max-width: 9)  {
+  
+    .navbar-brand {
+      padding-left: 34%;
+    }
+    
+    .navbar .navbar-brand, .navbar .nav-link {
+      color: #1fbec6;
+    }
+  
+    .flex-nav {
+      -webkit-box-orient: horizontal!important;
+      -webkit-box-direction: normal!important;
+      -ms-flex-direction: column!important;
+      flex-direction: column!important;
+      padding-right: 60px;
+      align-items: center;
+    } 
+  }
+  
+  @media only screen and (max-width: 800px) and (min-width: 800px)  {
+    .navbar-brand {
+      padding-left: 34%;
+    }
+  }
+  
+  @media only screen and (max-width: 384px) and (min-width: 384px)  {
+    .navbar-brand {
+      padding-left: 60px;
+    }
+  }
+  
+  
+  @media only screen and (max-width: 600px) and (min-width: 400px)  {
+    .navbar-brand {
+      padding-left: 30%;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) and (min-width: 400px)  {
+    .navbar-brand {
+      padding-left: 30%;
+    }
+  }
+  
+  .navbar.navbar-transparent {
+    background-color: transparent;
+  }
+  
+  .navbar .navbar-brand h1, .navbar .nav-link {
+    color: #1fbec6;
+  }
+  
+  .hamburger:hover{
+    cursor: pointer;
+  }
+  
+  .hamburger .line{
+    width: 50px;
+    height: 5px;
+    background-color: #000;
+    display: block;
+    margin: 8px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    z-index: 1000;
+  }
+  
+  /* https://codepen.io/sven_ebens/pen/MWwjYqJ */
+  button.navbar-toggler {
+    outline: none;
+  }
+  
+  button.navbar-toggler[aria-expanded="true"] {
+    opacity: 1;
+  }
+  
+  button.navbar-toggler[aria-expanded="true"] #hamburger-1 .line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  button.navbar-toggler[aria-expanded="true"] #hamburger-1 .line:nth-child(1){
+    -webkit-transform: translateY(13px) rotate(45deg);
+    -ms-transform: translateY(13px) rotate(45deg);
+    -o-transform: translateY(13px) rotate(45deg);
+    transform: translateY(13px) rotate(45deg);
+  }
+  
+  button.navbar-toggler[aria-expanded="true"] #hamburger-1 .line:nth-child(3){
+    -webkit-transform: translateY(-13px) rotate(-45deg);
+    -ms-transform: translateY(-13px) rotate(-45deg);
+    -o-transform: translateY(-13px) rotate(-45deg);
+    transform: translateY(-13px) rotate(-45deg);
+  } 
